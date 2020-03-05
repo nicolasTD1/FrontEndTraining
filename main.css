@@ -1,17 +1,16 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	font-family: 'Montserrat', sans-serif;
-	margin: 0;
-}
-
 #product-overview {
-	background: url("freedom.jpg");
+	background: url("./images/freedom.jpg") left 10%/cover no-repeat border-box ;
+	/*background-image: url("freedom.jpg");
+	background-size: cover;
+	background-position: left 10%;
+	background-repeat: no-repeat;
+	background-origin: border-box; 
+	background-clip:border-box; */
 	width:  100%; 
 	height:528px;
 	padding:10px;
+	/*border: 5px dashed red;*/
+	position: relative;
 }
 
 .section-title {
@@ -22,6 +21,15 @@ body {
 #product-overview h1 {
 	color: white;
 	font-family: 'Anton', sans-serif;
+	position: absolute;
+	bottom: 5%;
+    left: 3%;
+}
+
+.plan__list {
+	width: 80%;
+	margin: auto;
+	text-align: center;
 }
 
 .plan {

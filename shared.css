@@ -1,7 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
 .main-header {
 	width: 100%;
+	position: fixed;
 	background: #2ddf5c;
 	padding: 8px 16px; 
+	z-index: 1;
 }
 
 .main-header > div {
@@ -14,6 +25,14 @@
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 22px;
+	height:22px;
+	/*width: 20px;*/
+	display: inline-block;
+}
+
+.main-header__brand img {
+	height: 100%;
+	/*width: 100%;*/ 
 }
 
 .main-nav {
@@ -110,3 +129,6 @@
 .button:focus{
 	outline: none;
 }
+
+
+aunque sigas con el se que tu no vas a volver
