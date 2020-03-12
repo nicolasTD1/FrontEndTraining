@@ -98,6 +98,7 @@ h5::after {
 }
 
 hr {
+   transform: none;
    -webkit-transform:rotate(90deg);
    color: white;
 }
