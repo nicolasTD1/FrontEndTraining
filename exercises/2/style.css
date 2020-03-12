@@ -1,0 +1,198 @@
+h1, p {
+   text-align: center;
+   margin-bottom: 0.8rem;
+   font-size: 3rem;
+}
+
+body {
+   margin: 0;
+}
+
+p {
+   margin-top: 0;
+   margin-bottom: 50px;
+   font-size: 0.9rem;
+}
+
+h1.item-h1 {
+   text-align: left;
+   font-weight: lighter;
+   margin: 0;
+   color: white;
+}
+
+p.item-p {
+   text-align: left;
+   margin: 0;
+   font-size: 0.8rem;
+   color: white;
+}
+
+svg {
+   margin-top: 5px;
+   background: white;
+   bottom: 5px;
+   left: 5px; 
+   display: none;
+    display: none; 
+}
+
+.item1 {
+   position: relative;   
+   background:url("grid-1.jpeg")center/cover no-repeat border-box;
+}
+
+.item2 {
+   position: relative;
+   background:url("grid-2.jpeg")center/cover no-repeat border-box;
+}
+
+.item3 {
+   position: relative;
+   background:url("grid-3.jpeg")center/cover no-repeat border-box;
+}
+
+.item4  {
+   position: relative;
+   background:url("grid-4.jpeg")center/cover no-repeat border-box;
+}
+
+.item5  {
+   position: relative;
+   background:url("grid-5.jpg")center/cover no-repeat border-box;
+}
+
+.item6  {
+   position: relative;
+   background:url("grid-6.jpeg")center/cover no-repeat border-box;
+}
+
+.item-text-hover{
+   width: 95%;
+   height: 95%;
+   top: 5px;
+   left: 5px;
+   display: none;
+   background:rgb(206, 86, 7);
+   opacity: 0.9;
+   margin: 2.5% auto;
+}
+
+.item1:hover .item-text-hover ,
+.item2:hover .item-text-hover ,
+.item3:hover .item-text-hover ,
+.item4:hover .item-text-hover ,
+.item5:hover .item-text-hover ,
+.item6:hover .item-text-hover {
+   top: 5px;
+   left: 5px;
+   display: block;
+   z-index: -1;
+
+}
+
+.item1:hover svg ,
+.item2:hover svg ,
+.item3:hover svg ,
+.item4:hover svg ,
+.item5:hover svg ,
+.item6:hover svg {
+   display:block;
+}
+
+.item-text {
+   position: absolute;
+   bottom: 50px;
+   left: 25px;
+   color: white; 
+   z-index: 2;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 33.33% 33.33% 33.33% ;
+   grid-template-rows: 50% 50%;
+   grid-template-areas: 
+     "item1 item2 item3"
+     "item4 item5 item6";
+   width: 95vw;
+   height: 90vh;
+   margin: auto;
+ }
+
+
+@media(min-width: 541px) and (max-width: 1024px) {
+   .container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "item1 item2"
+      "item3 item4" 
+      "item5 item6";
+      width: 100vw;
+      height: 100vh;
+      margin: auto;
+   }
+}
+
+@media(min-width: 0px) and (max-width: 540px) {
+   .container {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "item1" 
+      "item2"
+      "item3"
+      "item4" 
+      "item5" 
+      "item6";
+      width: 100vw;
+      height: 100vh;
+      margin: auto;
+   }
+
+   .item1 {
+      height: 35rem;
+      margin: 0;
+      position: relative;   
+      background:url("grid-1.jpeg")center/cover no-repeat border-box;
+   }
+
+   .item2 {
+      height: 35rem;
+      margin: 0;
+      position: relative;   
+      background:url("grid-2.jpeg")center/cover no-repeat border-box;
+   }
+
+   .item3 {
+      height: 35rem;
+      margin: 0;
+      position: relative;   
+      background:url("grid-3.jpeg")center/cover no-repeat border-box;
+   }
+
+   .item4 {
+      height: 35rem;
+      margin: 0;
+      position: relative;   
+      background:url("grid-4.jpeg")center/cover no-repeat border-box;
+   }
+
+   .item5 {
+      height: 35rem;
+      margin: 0;
+      position: relative;   
+      background:url("grid-5.jpg")center/cover no-repeat border-box;
+   }
+
+   .item6 {
+      height: 35rem;
+      margin: 0;
+      position: relative;   
+      background:url("grid-6.jpeg")center/cover no-repeat border-box;
+   }
+
+}

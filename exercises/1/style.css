@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+   position: relative;
+   margin: 0;
+}
+
+#introductory-content {
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 10%, transparent), url("background-img.jpeg") center/cover no-repeat border-box;   
+   width:  100vw; 
+   height:  100vh; 
+}
+
+h1 {
+   margin: 0;
+   font-size: 4rem;
+   width: 100%;
+   font-weight: lighter;
+   text-align: center;
+}
+
+p {
+   font-weight: bold;
+   text-align: center;
+   font-size: 4rem;
+   margin: 0;
+}
+
+.container-text {
+   position: absolute;
+   color: white;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.arrow-svg{
+   position: absolute;
+   bottom: 0%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
