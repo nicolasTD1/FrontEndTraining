@@ -118,25 +118,3 @@ footer {
    color:gray;
    font-size: 0.9rem;
 }
-
-.parent {
-   display: flex;
-   flex-wrap: wrap;
-   width: 1000px;
-}
- 
-.child {
-   width: 200px;
-   margin: 5px;
-   height: 100px;
-   background-color: blue;
-}
-
- @media(max-width: 1000px) {
-   .child {
-      margin: 5px;
-      height: 100px;
-      width: 600px;
-      background-color: blue;
-    }  
- }
